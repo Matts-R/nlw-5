@@ -1,0 +1,18 @@
+.chat {
+	&__button {
+		height: 4rem;
+		width: 4rem;
+		border: 0.5px solid #ac81c3;
+		background: gradient(50);
+
+    &:hover {
+			animation: bg_transition 0.4s forwards ease-in-out;
+		}
+	}
+
+	&__icon {
+		width: 2.3rem;
+		height: 2.3rem;
+		margin: 4px 0px 0px 4px;
+	}
+}

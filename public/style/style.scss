@@ -1,0 +1,16 @@
+@import "variables", "breakpoints", "utils", "animations", "layout";
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%; 
+  font-family: $font;
+  background-color: $background-color;
+}
+
+@import "index";
