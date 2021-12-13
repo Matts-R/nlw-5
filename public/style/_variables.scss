@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
-$font: 'Open Sans', sans-serif;
+$font: "Open Sans", sans-serif;
 $font-color: #212121;
 
-$background-color: #F5F5F5;
+$background-color: #f5f5f5;
 
-@function gradient($deg){
-@return linear-gradient(#{$deg}deg, rgba(126, 209, 210, 1) 39%, rgba(172, 129, 195, 1) 77%);
+@function gradient_color_hint($first, $second) {
+	@return linear-gradient(45deg, #00d2ff $first, #3a47d5 $second);
 }

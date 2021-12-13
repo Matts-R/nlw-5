@@ -1,12 +1,32 @@
 .chat {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(3, 1fr) 0.75fr;
+
 	&__button {
 		height: 4rem;
 		width: 4rem;
-		border: 0.5px solid #ac81c3;
-		background: gradient(50);
+		grid-column: 5 / span 1;
+		grid-row: 4 / span 1;
+		justify-self: end;
+		align-self: end;
+		margin: 0rem 1rem 1rem 0rem;
+		border: 0.5px solid rgba(0, 210, 255, 1);
+		background: linear-gradient(45deg, #00d2ff 45%, #3a47d5 100%);
 
-    &:hover {
-			animation: bg_transition 0.4s forwards ease-in-out;
+		@include bp_max_width("small") {
+			grid-column: 1 / span 1;
+			grid-row: 4 / span 1;
+			justify-self: start;
+			align-self: end;
+		}
+
+		&._animation_hover {
+			animation: bg_transition__hover 0.4s forwards ease-in-out;
+		}
+
+		&._animation_hoverout {
+			animation: bg_transition__hoverout 0.4s forwards ease-in-out;
 		}
 	}
 
@@ -14,5 +34,17 @@
 		width: 2.3rem;
 		height: 2.3rem;
 		margin: 4px 0px 0px 4px;
+	}
+
+	.tes {
+		width: 10rem;
+		grid-column: 2 / span 1;
+		grid-row: 3 / span 1;
+		height: 10rem;
+		background-color: black;
+	}
+
+	&__dialog {
+		animation: scale_right_bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 	}
 }

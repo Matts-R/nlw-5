@@ -1,0 +1,95 @@
+@keyframes bg_transition__hover {
+	0% {
+		background: gradient_color_hint(45%, 100%);
+	}
+
+	10% {
+		background: gradient_color_hint(35%, 100%);
+	}
+
+	30% {
+		background: gradient_color_hint(25%, 100%);
+	}
+
+	40% {
+		background: gradient_color_hint(15%, 100%);
+	}
+
+	50% {
+		background: gradient_color_hint(5%, 100%);
+	}
+
+	60% {
+		background: gradient_color_hint(-5%, 100%);
+	}
+
+	70% {
+		background: gradient_color_hint(-15%, 100%);
+	}
+
+	80% {
+		background: gradient_color_hint(-30%, 100%);
+	}
+
+	90% {
+		background: gradient_color_hint(-40%, 100%);
+	}
+
+	100% {
+		background: gradient_color_hint(-50%, 100%);
+	}
+}
+
+@keyframes bg_transition__hoverout {
+	0% {
+		background: gradient_color_hint(-50%, 100%);
+	}
+
+	10% {
+		background: gradient_color_hint(-40%, 100%);
+	}
+
+	30% {
+		background: gradient_color_hint(-30%, 100%);
+	}
+
+	40% {
+		background: gradient_color_hint(-15%, 100%);
+	}
+
+	50% {
+		background: gradient_color_hint(-5%, 100%);
+	}
+
+	60% {
+		background: gradient_color_hint(5%, 100%);
+	}
+
+	70% {
+		background: gradient_color_hint(15%, 100%);
+	}
+
+	80% {
+		background: gradient_color_hint(30%, 100%);
+	}
+
+	90% {
+		background: gradient_color_hint(40%, 100%);
+	}
+
+	100% {
+		background: gradient_color_hint(45%, 100%);
+	}
+}
+
+@keyframes scale_right_bottom {
+	0% {
+		transform: scale(0, 0);
+		transform-origin: right bottom;
+	}
+
+	100% {
+		transform: scale(1, 1);
+		transform-origin: right bottom;
+	}
+}
