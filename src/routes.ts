@@ -24,7 +24,7 @@ routes.get("/", (request: Request, response: Response) => {
 	response.locals = {
 		title: "Chat",
 	};
-	return response.render("index", { user: "matts" });
+	return response.render("index");
 });	
 /* END: VIEW ROUTES */
 

@@ -1,13 +1,13 @@
 .chat {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(3, 1fr) 0.75fr;
+	grid-template-rows: repeat(6, 1fr);
 
 	&__button {
 		height: 4rem;
 		width: 4rem;
 		grid-column: 5 / span 1;
-		grid-row: 4 / span 1;
+		grid-row: 6 / span 1;
 		justify-self: end;
 		align-self: end;
 		margin: 0rem 1rem 1rem 0rem;
@@ -36,15 +36,61 @@
 		margin: 4px 0px 0px 4px;
 	}
 
-	.tes {
-		width: 10rem;
-		grid-column: 2 / span 1;
-		grid-row: 3 / span 1;
-		height: 10rem;
-		background-color: black;
-	}
-
 	&__dialog {
+		width: 17rem;
+		height: 25rem;
+		z-index: 1;
+
+		grid-column: 4 / span 1;
+		grid-row: 2 / span 4;
+
+		display: flex;
+		flex-direction: column;
+
+		background-color: $chat-color;
+		border: solid 1px black;
+		border-radius: 8%;
+
+		position: relative;
+		left: 8rem;
+		top: 1rem;
+
 		animation: scale_right_bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+		&__area {
+			height: 87%;
+			width: 100%;
+
+			border-radius: 8% 8% 0% 0%;
+
+			overflow-y: auto;
+
+			&__message {
+				margin: 1rem 0.5rem 0rem 0.5rem;
+				width: 90%;
+				height: 20%;
+			}
+		}
+
+		&__footer {
+			height: 13%;
+			width: 100%;
+
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			border-radius: 0% 0% 8% 8%;
+
+			&__btn_init {
+				height: 2rem;
+				width: 6rem;
+
+				border: 1px solid black;
+				border-radius: 0.5rem;
+
+				cursor: pointer;
+			}
+		}
 	}
 }

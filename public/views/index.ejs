@@ -1,8 +1,19 @@
 <div class="chat">
-	<button id="chat_button" class="chat__button rounded cp">
-		<img src="/icons/chat_icon.svg" class="chat__icon" alt="" />
+
+	<button id="btn_chat_icon" class="chat__button rounded cp">
+		<img src="/icons/chat_icon.svg" class="chat__icon" alt="Chat icon" />
 	</button>
 
-	<div class="tes scale-in-ver-bottom"></div>
+	<div class="chat__dialog">
+		<div class="chat__dialog__area">
+			<input id="message" class="chat__dialog__area__message" type="text" name="message">
+		</div>
+		<div class="chat__dialog__footer">
+			<button id="btn_cancel_chat" class="chat__dialog__footer__btn_init" title="cancel" role="button">Cancelar</button>
+			<button id="btn_start_chat" class="chat__dialog__footer__btn_init" title="start" role="button">Iniciar chat</button>
+		</div>
+	</div>
+
 </div>
+<script src="/socket.io/socket.io.js"></script>
 <script src="js/index.js"></script>

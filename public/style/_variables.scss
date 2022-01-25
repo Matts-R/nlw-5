@@ -4,6 +4,7 @@ $font: "Open Sans", sans-serif;
 $font-color: #212121;
 
 $background-color: #f5f5f5;
+$chat-color: rgba(235, 235, 235, 0.5);
 
 @function gradient_color_hint($first, $second) {
 	@return linear-gradient(45deg, #00d2ff $first, #3a47d5 $second);
